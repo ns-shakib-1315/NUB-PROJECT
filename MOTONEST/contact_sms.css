@@ -1,0 +1,57 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: LEMON MILK;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000000;
+    color: #333;
+}
+
+.message_sent_container {
+    text-align: center;
+    padding: 20px;
+}
+
+.box_01 {
+    background: #1a1a1a;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.box_01 h1 {
+    margin: 0 0 10px;
+    font-size: 2rem;
+    color: #FB312E;
+}
+
+.box_01 p {
+    margin: 0 0 50px;
+    font-size: 1rem;
+    color: #FFFFFFCC;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #FFFFFFCC;
+    background: #FB312E;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: #45a049;
+}

@@ -1,0 +1,786 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: LEMON MILK;
+}
+
+
+
+/*================================
+     FULL BODY SECTION (START)
+==================================*/
+body{
+    background-color: black;
+    color: white;
+}
+/*================================
+     FULL BODY SECTION (END)
+==================================*/
+
+
+/*============================
+     SIDE SCROLL-BAR (START)
+==============================*/
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.25);
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background: linear-gradient(to top, #FB4700 , #000000);
+}
+/*============================
+     SIDE SCROLL-BAR (END)
+==============================*/
+
+
+
+
+/*======================================
+     HEADER & HERO SECTION (START)
+========================================*/
+
+section{
+    width: 100%; /*== BANNER WIDTH ==*/
+    height: 100vh; /*== BANNER HEIGHT ==*/
+    background-image: url(IMG/HOME_HERO_BG_IMG_DARK.png); /*== HERO-SEC BANNER IMG ==*/
+    background-size: cover; /*== BANNER SIZE ==*/
+    background-position: center; /*== BANNER POSITION ==*/
+}
+
+/* HERO-SEC IMG */
+section .main .main_content .main_image img{
+    width: 650px;
+    position: relative;
+    left: 20px;
+    top: 150px;
+    align-items: center;
+    z-index: 5;
+}
+
+
+
+/*===========================
+     GLOWING BALL (START)
+=============================*/
+.Glowing_Ball {
+    width: 300px; /*== Ball Width ==*/
+    height: 300px; /*== Ball Height ==*/
+    background-color: #FB4700; /* Base Color of the Ball */
+    border-radius: 50%; /* Makes it a Circle */
+    box-shadow: 0 0 20px #FB4700, 0 0 40px #FB4700, 0 0 60px #FB4700; /* Glow effect */
+    animation: pulse 2s infinite; /* Optional pulsing animation */
+    position: absolute;
+    bottom: 300px;
+    right: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Optional Animation for a Pulsing Effect */
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 0 20px #FB4700, 0 0 40px #FB4700, 0 0 60px #FB4700;
+    }
+    50% {
+        box-shadow: 0 0 300px #FB4700, 0 0 400px #FB4700, 0 0 500px #FB4700;
+    }
+}
+/*===========================
+     GLOWING BALL (END)
+=============================*/
+
+
+
+
+/*==========================
+     HEADER BOX SEC (START)
+============================*/
+section nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: hsla(0, 0%, 2%, 0.6);
+    backdrop-filter: blur(10px); /*-- HEADER BOX BLUR EFFECT --*/
+    position: fixed; /*-- POSITION --*/
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100; /* Z-AXIS DIRECTION */
+
+    /*-- BORDER --*/
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #FB4700;
+
+    /*-- MARGIN --*/
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    box-shadow: 0 0 3px #FB4700, 0 0 4px #FB4700, 0 0 5px #FB4700; /* Glow Effect */
+    animation: HEADER_PULSE 2s infinite; /* Optional Pulsing Animation */
+}
+/*=========================
+     HEADER BOX SEC (END)
+===========================*/
+
+
+/*-----------------------
+     LOGO BOX (START)
+-------------------------*/
+.LOGO-PNG{
+    height: auto;
+    width: 250px;
+}
+/*-----------------------
+     LOGO BOX (END)
+-------------------------*/
+
+section nav ul{
+    list-style: none;
+}
+
+section nav ul li{
+    display: inline-block;
+    margin: 5px 15px;
+}
+
+section nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 0.2s;
+}
+
+
+
+/*======================
+     HEADER MENU HOVER
+========================*/
+section nav ul i:hover{
+    color: #FB4700;
+}
+
+section nav .Icons i{
+    margin: 0 4px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+    color: rgb(255, 255, 255);
+}
+
+section nav .Icons i:hover{
+    color: #FB4700;
+}
+
+
+section nav ul li a i:hover{
+    color: #FB4700;
+}
+
+section nav .Icons li a i{
+    margin: 0 4px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+    color: rgb(255, 255, 255);
+}
+
+section nav .Icons li a i:hover{
+    color: #FB4700;
+}
+
+section .main .main_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/*===================
+     HERO MAIN TXT
+=====================*/
+section .main .main_content .Main_TXT h1{
+    font-size: 80px;
+    line-height: 70px;
+    font-family: LEMON MILK;
+    background: linear-gradient(to right, #ffffff, #a1a1a1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    top: 140px;
+    left: 5%;
+}
+
+
+
+/*===========================
+     HERO SEC MAIN TXT SPAN
+=============================*/
+section .main .main_content .Main_TXT h1 span{
+    font-size: 80px;
+    font-family: LEMON MILK;
+    background: linear-gradient(to right, #FB4700, #F8BD33);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/*========================
+     HERO SEC SLOGAN TXT
+==========================*/
+section .main .main_content .Main_TXT p{
+    font-size: 18px;
+    width: 600px;
+    text-align: justify;
+    line-height: 21px;
+    position: relative;
+    top: 150px;
+    left: 6%;
+    color: white;
+    font-family: LEMON MILK;
+}
+
+
+section .main .social_icon{
+    position: absolute;
+    top: 50%;
+    left: 98%;
+    transform: translate(-50%,-50%);
+    font-size: 19px;
+}
+
+section .main .social_icon i{
+    margin: 8px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+/*==============================================
+     HERO SECTION BOTTON "GET START" (START)
+================================================*/
+section .main .BUTTON{
+    position: absolute;
+    bottom: 300px;
+    left: 10%;
+    padding: 15px 20px;
+    border-radius: 50px;
+    background: #FB4700;
+}
+
+section .main .BUTTON a{
+    color: white;
+    text-decoration: none;
+}
+
+section .main .BUTTON i{
+    color: white;
+    margin-left: 5px;
+    transition: 0.3s;
+}
+
+section .main .BUTTON:hover i{
+    transform: translateX(6px);
+}
+/*======================================
+     HEADER & HERO SECTION (END)
+========================================*/
+
+
+/*======================== 
+     Brands Logo (START)
+==========================*/
+
+.Logo-Container {
+    width: 100%;
+    overflow: hidden;
+    background-image: url(IMG/DARK_PAPER_BG.png);
+    background-color: black;
+    border: solid white;
+    border-width: 1px 0 1px 0;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.Logo-Container .slider {
+    display: flex;
+    animation: slide 30s linear infinite;
+ }
+  
+.Logo-Container .slider img{
+    width: auto;
+    height: 50px;
+    margin-right: 100px;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+/*======================== 
+     Brands Logo (END)
+==========================*/
+
+
+
+/*==========================
+     About Section (Start)
+============================*/
+.About_Container{
+    padding: 50px;
+}
+
+.About_Section {
+    width: 90%;
+    height: auto;
+    max-width: 90%;
+
+    margin: 20px auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: #1a1a1a;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 100px;
+    padding-left: 100px;
+
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    text-align: center;
+}
+
+.About_Section h2 {
+    font-size: 2.5rem;
+    color: #f39c12;
+    margin-bottom: 20px;
+}
+
+.About_Section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+/*========================
+     About Section (End)
+==========================*/
+
+
+
+/*=============================
+     All Parts Section (START)
+===============================*/
+.All_Parts_Container{   /* All Parts Container */
+    background-image: url(IMG/DARK_PAPER_BG.png);
+    align-items: center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.All_Parts_Container h1{   /* All Part Header Txt */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+    border-style: solid;
+    border-color: white;
+    border-radius: 50px;
+    border-width: 2px;
+
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+
+/* Car Parts Container */
+.Car_Parts_Container{
+    width: 100%;
+    height: auto;
+    padding: 50px;
+}
+
+
+/* All Parts (1ST HEADER TXT) H2 */
+.Car_Parts_Container .HEADER h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+    border-style: solid;
+    border-color: white;
+    border-radius: 50px;
+    border-width: 2px;
+
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+
+
+/* All Parts (2ND HEADER TXT) H1 */
+.Car_Parts_Container .SUB_HEADER h2{
+    margin: 35px 0;
+    font-size: 40px; /* Header TXT Font Size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #FB4700, #F8BD33); /* Header TXT COLOR */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Car_Parts_Container .Box{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 50px;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.Car_Parts_Container .Box .card{
+    width: 300px;
+    max-width: 300px;
+    height: 350px;
+    max-height: 450px;
+    box-shadow: 0 0 8px #ffffff;
+    border-radius: 20px;
+    text-align: center;
+
+    /* Padding */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #000000; /* Parts Box BG Color */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.Car_Parts_Container .Box .card .small_card{
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    margin: 10px 0;
+    transform: translateX(-20px);
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.Car_Parts_Container .Box .card:hover .small_card{
+    transform: translateX(2px);
+    cursor: pointer;
+    opacity: 1;
+}
+
+.Car_Parts_Container .Box .card .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Car_Parts_Container .Box .card .image img{
+    width: 150px;
+    margin: 15px 0;
+    transition: 0.3s;
+}
+
+.Car_Parts_Container .Box .card:hover .image img{
+    transform: scale(1.1);
+}
+
+.Car_Parts_Container .Box .card .small_card i{
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 2px 0;
+    line-height: 40px;
+    border: 2px solid #999999;
+    transition: 0.2s;
+}
+
+.Car_Parts_Container .Box .card .small_card i:hover{
+    color: #c72092;
+}
+
+
+/* PARTS MAIN TXT */
+.Car_Parts_Container .Box .card .Parts_TXT h2{
+    font-size: 20px;
+    margin-top: 15px;
+    color: rgb(255, 255, 255);
+}
+
+/* PARTS DISCRIPTION TXT */
+.Car_Parts_Container .Box .card .Parts_TXT p{
+    color: hsla(0, 0%, 100%, 0.8);
+    line-height: 21px;
+    margin: 8px 0;
+    font-size: 15px;
+}
+
+/* PARTS PRICE TXT */
+.Car_Parts_ContainerS .Box .card .Parts_TXT h3{
+    margin-bottom: 50px;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+/* ADD TO CART (BUTTON) */
+.Car_Parts_Container .Box .card .Parts_TXT .Button{
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #FB4700;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+
+.Car_Parts_Container .Box .card .Parts_TXT .Button.Button:hover{
+    background-color: white;
+    color: black;
+    transition: ease-in;
+    transition-duration: 0.2s;
+    transition-behavior: smooth;
+}
+.Parts_TXT h2{
+    margin-bottom: 40px;
+}
+
+
+/*=============================
+     All Parts Section (START)
+===============================*/
+
+
+/*----------------------------------
+     ALL FEATURES SECTION (START)
+------------------------------------*/
+
+.All_Features{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.All_Features h1{
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.All_Features h1 span{
+    margin-left: 15px;
+    background: linear-gradient(to left, #c72092 , #6c14d0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.All_Features .All_Features_cards{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 50px;
+}
+
+.All_Features .All_Features_box i{
+    font-size: 60px;
+    color: orange;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.All_Features .All_Features_box h3{
+    margin-bottom: 12px;
+    font-size: 19px;
+}
+
+.All_Features .All_Features_box p{
+    text-align: center;
+    color: #919191;
+    margin-bottom: 60px;
+}
+/*----------------------------------
+     ALL FEATURES SECTION (END)
+------------------------------------*/
+
+
+
+/*==========================
+     Login Section (Start)
+============================*/
+
+/* ===== COLOR VARIABLES ===== */
+:root{
+    --primary-color: #c6c3c3;
+    --second-color: #ffffff; 
+    --black-color: #000000;
+}
+/* ===== Reusable CSS ===== */
+a{
+    text-decoration: none;
+    color: var(--second-color);
+}
+a:hover{
+    text-decoration: underline;
+}
+
+
+
+/*--------------------------------
+     FOOTER MAIN SECTION (START)
+----------------------------------*/
+footer .footer_main{
+    width: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+
+    border: white;
+    border-style: solid;
+    border-width: 2px 0 0 0;
+}
+
+footer .footer_main .tag{
+    margin: 10px 0;
+}
+
+footer .footer_main .tag .center{
+    text-align: center;
+}
+
+footer .footer_main .tag h1{
+    font-size: 25px;
+    margin: 25px 0;
+}
+
+footer .footer_main .tag a{
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 9px 0;
+}
+
+footer .footer_main .tag a i{
+    padding: 0 10px;
+    transition: 0.3;
+}
+
+footer .footer_main .tag a i:hover{
+    color: #ff0000;
+}
+
+footer .footer_main .tag .social_link{
+    display: flex;
+}
+
+footer .footer_main .tag .social_link a{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
+    position: relative;
+    margin: 0 5px;
+    z-index: 10;
+    overflow: hidden;
+}
+
+footer .footer_main .tag .social_link a .fa-brands{
+    font-size: 15px;
+    line-height: 30px;
+    z-index: 10;
+    position: relative;
+    transition: 0.5s;
+}
+
+footer .footer_main .tag .social_link a:hover i{
+    color: white;
+}
+
+footer .footer_main .tag .social_link a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -90px;
+    background: #ff0000;
+    position: absolute;
+    z-index: -10;
+    transition: 0.5s;
+}
+
+footer .footer_main .tag .social_link a:hover::after{
+    left: 0;
+}
+
+footer .footer_main .tag .search_bar{
+    width: 230px;
+    height: 30px;
+    background: rgb(202, 202, 202);
+    border-radius: 25px;
+}
+
+footer .footer_main .tag .search_bar input{
+    width: 200px;
+    padding: 2px 0;
+    position: relative;
+    top: 17%;
+    left: 6%;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 13px;
+}
+
+
+/*------------------------------
+     FOOTER SUBSCIRBE BUTTON
+--------------------------------*/
+footer .footer_main .tag .search_bar button{
+    padding: 8px 15px;
+    background: linear-gradient(to right, #000000 , #FB4700);
+    border: none;
+    margin-top: 15px;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+}
+/*------------------------------
+     FOOTER SECTION (END)
+--------------------------------*/
